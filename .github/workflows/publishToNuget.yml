@@ -41,9 +41,6 @@ jobs:
       - name: Build solution and generate NuGet package
         run: |
           dotnet pack -c Release -o out -p:PackageVersion=${{ steps.gitversion.outputs.semVer }}
-
-      - name: Push HttpClient to GitHub registry
-        run: dotnet nuget push ./out/SugarChat.Net.Client.${{ steps.gitversion.outputs.semVer }}.nupkg --skip-duplicate --no-symbols true -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
           
       - name: Push Message to GitHub registry
         run: dotnet nuget push ./out/SugarChat.Message.${{ steps.gitversion.outputs.semVer }}.nupkg --skip-duplicate --no-symbols true -k ${{secrets.NUGET_API_KEY}} -s https://api.nuget.org/v3/index.json
