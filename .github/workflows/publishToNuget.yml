@@ -1,4 +1,4 @@
-name: GitVersion
+name: Publish To Nuget
 on:
   push:
     branches: [ ]
@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  gitVersion:
+  publish_to_nuget:
     runs-on: ubuntu-latest
 
     steps:
