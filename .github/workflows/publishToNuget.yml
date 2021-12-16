@@ -1,5 +1,4 @@
 name: GitVersion
-
 on:
   push:
     branches: [ ]
@@ -11,26 +10,27 @@ on:
 jobs:
   gitVersion:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - uses: gittools/actions/gitversion/setup@v0.9.7
-      with:
-        versionSpec: '5.x'
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: gittools/actions/gitversion/setup@v0.9.7
+        with:
+          versionSpec: '5.x'
+          
+      - name: Checkout
+        run: git fetch --tags
+
+      - name: Fetch master for GitVersion
+        if: github.ref != 'refs/heads/main'
+        run: git branch --create-reflog master origin/main
         
-    - name: Checkout
-      run: git fetch --tags
-
-    - name: Fetch master for GitVersion
-      if: github.ref != 'refs/heads/main'
-      run: git branch --create-reflog master origin/main
-      
-    - name: Determine Version
-      id: gitversion
-      run: gittools/actions/gitversion/execute@v0.9.7
-
-    - name: Display SemVer
-      run: |
-        echo "SemVer: $GITVERSION_SEMVER"
-        echo "SemVer: ${{ steps.gitversion.outputs.semVer }}"
+      - name: Determine Version
+        id: gitversion
+        uses: gittools/actions/gitversion/execute@v0.9.7
+    
+      - name: Display SemVer
+        run: |
+          echo "SemVer: $GITVERSION_SEMVER"
+          echo "SemVer: ${{ steps.gitversion.outputs.semVer }}"
