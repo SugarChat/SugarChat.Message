@@ -1,4 +1,4 @@
-name: GitVersion
+name: Publish To Nuget
 
 on:
   push:
@@ -9,10 +9,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  gitVersion:
+  publish_to_nuget:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
 
     - name: Install GitVersion
       uses: gittools/actions/gitversion/setup@v0.9.7
@@ -20,10 +22,8 @@ jobs:
         versionSpec: '5.x'
         
     - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-      
+      run: git fetch --tags
+
     - name: Fetch master for GitVersion
       if: github.ref != 'refs/heads/main'
       run: git branch --create-reflog master origin/main
