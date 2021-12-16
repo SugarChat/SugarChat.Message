@@ -1,4 +1,4 @@
-name: Publish To Nuget
+name: GitVersion
 
 on:
   push:
@@ -9,15 +9,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish_to_nuget:
+  gitVersion:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-
-    - name: Install GitVersion
-      uses: gittools/actions/gitversion/setup@v0.9.7
+    - uses: gittools/actions/gitversion/setup@v0.9.7
       with:
         versionSpec: '5.x'
         
