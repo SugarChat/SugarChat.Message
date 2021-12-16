@@ -8,7 +8,6 @@ namespace SugarChat.Message
     {
         Member,
         Admin,
-        Owner,
-        TEST
+        Owner
     }
 }
