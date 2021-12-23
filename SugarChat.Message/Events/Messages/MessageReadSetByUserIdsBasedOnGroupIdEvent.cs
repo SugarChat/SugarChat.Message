@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SugarChat.Message.Commands
+namespace SugarChat.Message.Events.Messages
 {
-    public interface INeedUserExist
+    public class MessageReadSetByUserIdsBasedOnGroupIdEvent : EventBase
     {
-        string UserId { get; set; }
     }
 }
