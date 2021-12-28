@@ -1,10 +1,11 @@
 ﻿using Mediator.Net.Contracts;
+using SugarChat.Message.Common;
 
 namespace SugarChat.Message.Basic
 {
     public interface ISugarChatResponse : IResponse
     {
-        int Code { get; set;  }
+        ExceptionCode Code { get; set;  }
 
         string Message { get; set; }
         
