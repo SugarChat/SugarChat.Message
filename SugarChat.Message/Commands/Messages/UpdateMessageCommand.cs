@@ -12,6 +12,6 @@ namespace SugarChat.Message.Commands.Messages
     {
         public string UserId { get; set; }
 
-        public IEnumerable<UpdateMessageDto> Messages { get; set; }
+        public IEnumerable<MessageDto> Messages { get; set; }
     }
 }

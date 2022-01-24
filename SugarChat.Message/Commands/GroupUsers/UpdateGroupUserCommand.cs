@@ -12,6 +12,6 @@ namespace SugarChat.Message.Commands.GroupUsers
     {
         public string UserId { get; set; }
 
-        public IEnumerable<UpdateGroupUserDto> GroupUsers { get; set; }
+        public IEnumerable<GroupUserDto> GroupUsers { get; set; }
     }
 }
