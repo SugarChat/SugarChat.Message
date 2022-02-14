@@ -1,17 +1,17 @@
 ﻿using Mediator.Net.Contracts;
-using SugarChat.Message.Dtos.GroupUsers;
+using SugarChat.Message.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SugarChat.Message.Commands.GroupUsers
+namespace SugarChat.Message.Commands.Messages
 {
-    public class UpdateGroupUserCommand : ICommand
+    public class UpdateMessageDataCommand : ICommand
     {
         public string UserId { get; set; }
 
-        public IEnumerable<GroupUserDto> GroupUsers { get; set; }
+        public IEnumerable<MessageDto> Messages { get; set; }
     }
 }
