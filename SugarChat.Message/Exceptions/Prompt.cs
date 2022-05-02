@@ -168,5 +168,19 @@ namespace SugarChat.Message.Exceptions
         public static readonly ExceptionPrompt DatabaseDuplicateKey = new ExceptionPrompt(ExceptionCode.DatabaseDuplicateKey, "Duplicate key error.");
         public static readonly ExceptionPrompt DatabaseTimeout = new ExceptionPrompt(ExceptionCode.DatabaseTimeout, "The Database connection has timed out");
         #endregion
+        
+        #region Emotion
+        public static readonly ExceptionPrompt AddEmotionFailed =
+            new ExceptionPrompt(ExceptionCode.AddEmotionFailed, "Emotion with Id {0} adding failed.");
+
+        public static readonly ExceptionPrompt RemoveEmotionFailed =
+            new ExceptionPrompt(ExceptionCode.RemoveEmotionFailed, "Emotion with Id {0} removing failed.");
+        
+        public static readonly ExceptionPrompt EmotionNotExist =
+            new ExceptionPrompt(ExceptionCode.EmotionNotExist, "Emotion with Id {0} does not exist.");
+        
+        public static readonly ExceptionPrompt EmotionNotBelongToUser =
+            new ExceptionPrompt(ExceptionCode.EmotionNotBelongToUser, "Emotion with Id {0} does not belong to user {1}.");
+        #endregion
     }
 }
