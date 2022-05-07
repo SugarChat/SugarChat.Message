@@ -79,7 +79,14 @@ namespace SugarChat.Message.Common
 
         #region Database
         DatabaseTimeout = 50500,
-        DatabaseDuplicateKey = 50503
+        DatabaseDuplicateKey = 50503,
+        #endregion
+
+        #region Emotion
+        AddEmotionFailed = 53001,
+        RemoveEmotionFailed = 53002,
+        EmotionNotExist = 53003,
+        EmotionNotBelongToUser = 53004,
         #endregion
     }
 }
