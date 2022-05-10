@@ -4,6 +4,6 @@ namespace SugarChat.Message.Dtos.Configurations
 {
     public class ServerConfigurationsDto
     {
-        public int RevokeTimeLimitInMinute  { get; set; }
+        public int RevokeTimeLimitInMinutes  { get; set; }
     }
 }
