@@ -102,11 +102,11 @@ namespace SugarChat.Message.Exceptions
         
         public static readonly ExceptionPrompt RevokeOthersMessage =
             new ExceptionPrompt(ExceptionCode.RevokeOthersMessage,
-                "User with Id {0} has no right to revoke message with Id {1} which it not sent by him.");
+                "User with Id {0} has no right to revoke other user's message with Id {1}.");
         
         public static readonly ExceptionPrompt TooLateToRevoke =
             new ExceptionPrompt(ExceptionCode.TooLateToRevoke,
-                "User with Id {0} can not revoke message with Id {1} since it's sent quite a time ago.");
+                "User with Id {0} can not revoke message with Id {1} since it's been sent quite a time ago.");
 
         #endregion
 

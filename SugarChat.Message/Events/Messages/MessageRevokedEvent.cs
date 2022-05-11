@@ -10,6 +10,5 @@ namespace SugarChat.Message.Events.Messages
     {
         public string UserId { get; set; }
         public string MessageId { get; set; }
-        public TimeSpan RevokeTimeLimit { get; set; }
     }
 }
