@@ -11,7 +11,8 @@ namespace SugarChat.Message.Requests.Conversations
     public class GetConversationByKeywordRequest : IRequest
     {
         public string UserId { get; set; }
-        public Dictionary<string, string> SearchParms { get; set; }
+        public Dictionary<string, string> GroupSearchParms { get; set; }
+        public Dictionary<string, string> MessageSearchParms { get; set; }
         public PageSettings PageSettings { get; set; }
         public bool IsExactSearch { get; set; }
         public IEnumerable<string> GroupIds { get; set; } = new List<string>();
