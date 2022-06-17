@@ -1,5 +1,3 @@
-using System;
-
 namespace SugarChat.Message.Dtos.Emotions
 {
     public class EmotionDto
