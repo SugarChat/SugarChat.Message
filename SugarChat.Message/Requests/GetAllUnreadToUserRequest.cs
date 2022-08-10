@@ -6,5 +6,6 @@ namespace SugarChat.Message.Requests
     public class GetAllUnreadToUserRequest : IRequest, INeedUserExist
     {
         public string UserId { get; set; }
+        public int Type { get; set; }
     }
 }
