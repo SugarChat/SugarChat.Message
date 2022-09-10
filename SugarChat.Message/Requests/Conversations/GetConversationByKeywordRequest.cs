@@ -16,5 +16,6 @@ namespace SugarChat.Message.Requests.Conversations
         public PageSettings PageSettings { get; set; }
         public bool IsExactSearch { get; set; }
         public IEnumerable<string> GroupIds { get; set; } = new List<string>();
+        public int? Type { get; set; }
     }
 }

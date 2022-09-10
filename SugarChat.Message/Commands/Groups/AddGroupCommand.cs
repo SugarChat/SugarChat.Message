@@ -17,5 +17,7 @@ namespace SugarChat.Message.Commands.Groups
         public Dictionary<string, string> CustomProperties { get; set; }
 
         public string CreatedBy { get; set; }
+
+        public int? Type { get; set; }
     }
 }
