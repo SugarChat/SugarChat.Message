@@ -8,7 +8,7 @@ namespace SugarChat.Message.Dtos
         public string Name { get; set; }
         public string AvatarUrl { get; set; }
         public string Description { get; set; }
-        public Dictionary<string, string> CustomProperties { get; set; }
+        public IEnumerable<GroupCustomPropertyDto> CustomProperties { get; set; }
         public int MemberCount { get; set; }
         public int UnreadCount { get; set; }
     }
