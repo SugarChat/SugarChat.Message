@@ -13,6 +13,8 @@ namespace SugarChat.Message.Requests.Groups
         public string UserId { get; set; }
         public Dictionary<string, string> CustomProperties { get; set; }
         public bool SearchAllGroup { get; set; }
-        public int? Type { get; set; }
+        public int? GroupType { get; set; }
+        public int? FilterGroupType { get; set; }
+        public int? FilterGroupUserType { get; set; }
     }
 }

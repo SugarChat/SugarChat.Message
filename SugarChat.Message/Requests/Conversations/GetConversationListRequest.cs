@@ -6,10 +6,12 @@ using System.Collections.Generic;
 namespace SugarChat.Message.Requests.Conversations
 {
     public class GetConversationListRequest : IRequest, INeedUserExist
-    {     
+    {
         public string UserId { get; set; }
         public PageSettings PageSettings { get; set; }
         public IEnumerable<string> GroupIds { get; set; } = new List<string>();
-        public int? Type { get; set; }
+        public int? GroupType { get; set; }
+        public int? FilterGroupType { get; set; }
+        public int? FilterGroupUserType { get; set; }
     }
 }

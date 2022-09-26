@@ -18,6 +18,6 @@ namespace SugarChat.Message.Commands.Groups
 
         public string CreatedBy { get; set; }
 
-        public int? Type { get; set; }
+        public int? GroupType { get; set; }
     }
 }

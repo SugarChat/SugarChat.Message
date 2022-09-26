@@ -14,6 +14,6 @@ namespace SugarChat.Message.Dtos
         public IEnumerable<GroupCustomPropertyDto> CustomPropertyList { get; set; }
         public int MemberCount { get; set; }
         public int UnreadCount { get; set; }
-        public int? Type { get; set; }
+        public int? GroupType { get; set; }
     }
 }
