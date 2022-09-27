@@ -9,7 +9,5 @@ namespace SugarChat.Message.Requests
         public PageSettings PageSettings { get; set; }
         public string UserId { get; set; }
         public int? GroupType { get; set; }
-        public int? FilterGroupType { get; set; }
-        public int? FilterGroupUserType { get; set; }
     }
 }
