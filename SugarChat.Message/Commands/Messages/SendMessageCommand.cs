@@ -12,5 +12,6 @@ namespace SugarChat.Message.Commands.Messages
         public Dictionary<string, string> CustomProperties { get; set; }
         public string CreatedBy { get; set; }
         public string FileUrl { get; set; }
+        public Dictionary<string, List<string>> FilterUnreadCountByGroupUserCustomProperties { get; set; }
     }
 }
