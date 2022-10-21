@@ -11,5 +11,7 @@ namespace SugarChat.Message.Requests.Conversations
         public PageSettings PageSettings { get; set; }
         public IEnumerable<string> GroupIds { get; set; } = new List<string>();
         public int? GroupType { get; set; }
+        public Dictionary<string, List<string>> ExcludeGroupByGroupCustomProperties { get; set; }
+        public Dictionary<string, List<string>> IncludeGroupByGroupCustomProperties { get; set; }
     }
 }
