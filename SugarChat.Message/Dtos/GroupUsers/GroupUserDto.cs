@@ -11,9 +11,7 @@ namespace SugarChat.Message.Dtos.GroupUsers
         public DateTimeOffset? LastReadTime { get; set; }
         public UserRole Role { get; set; }
         public MessageRemindType MessageRemindType { get; set; }
-        [Obsolete("过时", false)]
         public Dictionary<string, string> CustomProperties { get; set; }
-        public IEnumerable<GroupUserCustomPropertyDto> CustomPropertyList { get; set; }
         public string AvatarUrl { get; set; }
         public string DisplayName { get; set; }
     }
