@@ -1,5 +1,4 @@
 ﻿using Mediator.Net.Contracts;
-using System.Collections.Generic;
 
 namespace SugarChat.Message.Requests.Conversations
 {
