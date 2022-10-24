@@ -8,7 +8,7 @@ namespace SugarChat.Message.Requests.Messages
     {
         public string UserId { get; set; }
         public IEnumerable<string> GroupIds { get; set; } = new List<string>();
-        public int? GroupType { get; set; }
+        public int GroupType { get; set; }
         public Dictionary<string, List<string>> ExcludeGroupByGroupCustomProperties { get; set; }
         public Dictionary<string, List<string>> IncludeGroupByGroupCustomProperties { get; set; }
     }

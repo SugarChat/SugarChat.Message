@@ -10,7 +10,7 @@ namespace SugarChat.Message.Requests.Conversations
         public string UserId { get; set; }
         public PageSettings PageSettings { get; set; }
         public IEnumerable<string> GroupIds { get; set; } = new List<string>();
-        public int? GroupType { get; set; }
+        public int GroupType { get; set; }
         public Dictionary<string, List<string>> ExcludeGroupByGroupCustomProperties { get; set; }
         public Dictionary<string, List<string>> IncludeGroupByGroupCustomProperties { get; set; }
     }
