@@ -1,4 +1,5 @@
 ﻿using Mediator.Net.Contracts;
+using SugarChat.Message.Dtos;
 using SugarChat.Message.Paging;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace SugarChat.Message.Requests.Conversations
         public bool IsExactSearch { get; set; }
         public IEnumerable<string> GroupIds { get; set; } = new List<string>();
         public int GroupType { get; set; }
-        public Dictionary<string, List<string>> ExcludeGroupByGroupCustomProperties { get; set; }
-        public Dictionary<string, List<string>> IncludeGroupByGroupCustomProperties { get; set; }
+        public SearchGroupByGroupCustomPropertiesDto ExcludeGroupByGroupCustomProperties { get; set; }
+        public SearchGroupByGroupCustomPropertiesDto IncludeGroupByGroupCustomProperties { get; set; }
     }
 }
