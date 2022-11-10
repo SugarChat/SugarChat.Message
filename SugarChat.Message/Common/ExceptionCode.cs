@@ -55,7 +55,6 @@ namespace SugarChat.Message.Common
         #region GroupUser
         UpdateGroupUserFailed = 52001,
         AddGroupUserFailed = 52002,
-        RemoveGroupUserFailed = 52003,
         AddGroupUsersFailed = 52004,
         RemoveGroupUsersFailed = 52005,
         NoCustomProperty = 52006,

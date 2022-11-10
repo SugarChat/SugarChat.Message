@@ -114,9 +114,6 @@ namespace SugarChat.Message.Exceptions
         public static readonly ExceptionPrompt AddGroupUserFailed =
             new ExceptionPrompt(ExceptionCode.AddGroupUserFailed, "GroupUser with Id {0} adding failed.");
 
-        public static readonly ExceptionPrompt RemoveGroupUserFailed =
-            new ExceptionPrompt(ExceptionCode.RemoveGroupUserFailed, "GroupUser with Id {0} removing failed.");
-
         public static readonly ExceptionPrompt AddGroupUsersFailed =
             new ExceptionPrompt(ExceptionCode.AddGroupUsersFailed, "Adding {0} groupUsers failed, only {1} of them added."); 
         
