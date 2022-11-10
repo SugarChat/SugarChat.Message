@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace SugarChat.Message.Commands.Groups
 {
+    /// <summary>
+    /// 迁移数据使用，一次性代码
+    /// </summary>
     public class MigrateGroupCustomPropertyCommand : ICommand
     {
     }
