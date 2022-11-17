@@ -48,7 +48,6 @@ namespace SugarChat.Message.Common
         UpdateMessageFailed = 51502,
         AddMessageFailed = 51503,
         RemoveMessageFailed = 51504,
-        LastReadTimeLaterThan = 51505,
         RevokeOthersMessage = 51506,
         TooLateToRevoke = 51507,
         #endregion
@@ -56,7 +55,6 @@ namespace SugarChat.Message.Common
         #region GroupUser
         UpdateGroupUserFailed = 52001,
         AddGroupUserFailed = 52002,
-        RemoveGroupUserFailed = 52003,
         AddGroupUsersFailed = 52004,
         RemoveGroupUsersFailed = 52005,
         NoCustomProperty = 52006,

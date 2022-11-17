@@ -14,5 +14,6 @@ namespace SugarChat.Message.Dtos.GroupUsers
         public Dictionary<string, string> CustomProperties { get; set; }
         public string AvatarUrl { get; set; }
         public string DisplayName { get; set; }
+        public int UnreadCount { get; set; }
     }
 }

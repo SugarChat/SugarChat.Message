@@ -14,5 +14,6 @@ namespace SugarChat.Message.Commands.GroupUsers
         public IEnumerable<string> GroupUserIds { get; set; }
         public UserRole Role { set; get; }
         public string CreatedBy { get; set; }
+        public Dictionary<string, string> CustomProperties { get; set; }
     }
 }
