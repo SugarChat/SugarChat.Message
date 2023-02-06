@@ -10,6 +10,8 @@ namespace SugarChat.Message.Dtos
     {
         public string Key { get; set; }
         public string Value { get; set; }
+
+        public Dictionary<string, List<string>> Params { get; set; }
         public bool IsExactSearch { get; set; } = true;
         public JoinType InternalJoin { get; set; }
         public JoinType ExternalJoin { get; set; }
@@ -18,8 +20,7 @@ namespace SugarChat.Message.Dtos
 
     public enum SearchTable
     {
-        GroupCustomProperty,
-        MessageCustomProperty,
+        Group,
         Message
     }
 }
