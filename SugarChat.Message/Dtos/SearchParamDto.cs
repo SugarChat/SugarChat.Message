@@ -11,7 +11,6 @@ namespace SugarChat.Message.Dtos
         public IEnumerable<SearchParamDetail> SearchParamDetails { get; set; }
         public JoinType InternalJoin { get; set; }
         public JoinType ExternalJoin { get; set; }
-        public SearchTable SearchTable { get; set; }
     }
 
     public class SearchParamDetail
@@ -37,11 +36,5 @@ namespace SugarChat.Message.Dtos
         GreaterThanOrEqual,
         LessThanThanOrEqual,
         Contain
-    }
-
-    public enum SearchTable
-    {
-        Group,
-        Message
     }
 }
