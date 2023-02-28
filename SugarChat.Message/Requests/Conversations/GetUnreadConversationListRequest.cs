@@ -1,4 +1,5 @@
 ﻿using Mediator.Net.Contracts;
+using SugarChat.Message.Commands;
 using SugarChat.Message.Dtos;
 using SugarChat.Message.Paging;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SugarChat.Message.Requests.Conversations
 {
-    public class GetConversationByKeywordRequest : IRequest
+    public class GetUnreadConversationListRequest : IRequest, INeedUserExist
     {
         public string UserId { get; set; }
         public PageSettings PageSettings { get; set; }
