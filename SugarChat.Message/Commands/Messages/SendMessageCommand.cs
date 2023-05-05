@@ -8,10 +8,10 @@ namespace SugarChat.Message.Commands.Messages
         public string Content { get; set; }
         public int Type { get; set; }
         public string SentBy { get; set; }
+        public bool IsSystem { get; set; }
         public string Payload { get; set; }
         public Dictionary<string, string> CustomProperties { get; set; }
         public string CreatedBy { get; set; }
-        public string FileUrl { get; set; }
         public Dictionary<string, List<string>> IgnoreUnreadCountByGroupUserCustomProperties { get; set; }
     }
 }
