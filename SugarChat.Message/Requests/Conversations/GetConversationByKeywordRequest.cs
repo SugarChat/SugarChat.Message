@@ -17,5 +17,6 @@ namespace SugarChat.Message.Requests.Conversations
         public int GroupType { get; set; }
         public List<SearchParamDto> SearchParams { get; set; }
         public List<SearchMessageParamDto> SearchMessageParams { get; set; }
+        public int MonthsAgo { get; set; }
     }
 }
