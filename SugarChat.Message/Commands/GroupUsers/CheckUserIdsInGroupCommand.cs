@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace SugarChat.Message.Commands.GroupUsers
 {
-    [Obsolete("use CheckUserIdsInGroupCommand")]
-    public class CheckUserIsInGroupCommand : ICommand
+    public class CheckUserIdsInGroupCommand : ICommand
     {
         public string GroupId { get; set; }
         public IEnumerable<string> UserIds { get; set; }
