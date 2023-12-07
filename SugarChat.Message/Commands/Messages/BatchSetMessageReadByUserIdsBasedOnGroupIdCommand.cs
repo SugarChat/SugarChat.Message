@@ -5,6 +5,6 @@ namespace SugarChat.Message.Commands.Messages
 {
     public class BatchSetMessageReadByUserIdsBasedOnGroupIdCommand : ICommand
     {
-        public IEnumerable<SetMessageReadByUserIdsBasedOnGroupIdCommand> SetMessageReadCommands { get; set; }
+        public IEnumerable<SetMessageReadByUserIdsBasedOnGroupIdCommand> SetMessageReadCommands { get; set; } = new List<SetMessageReadByUserIdsBasedOnGroupIdCommand>();
     }
 }
