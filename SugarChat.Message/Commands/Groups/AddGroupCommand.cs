@@ -1,6 +1,5 @@
-using System;
 using System.Collections.Generic;
-using Mediator.Net.Contracts;
+using SugarChat.Message.Dtos.GroupUsers;
 
 namespace SugarChat.Message.Commands.Groups
 {
@@ -19,5 +18,7 @@ namespace SugarChat.Message.Commands.Groups
         public string CreatedBy { get; set; }
 
         public int Type { get; set; }
+
+        public IEnumerable<GroupUserDto> GroupUsers { get; set; }
     }
 }
